@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
         // Submit the form to Netlify
         await fetch("/", {
           method: "POST",
-          body: formElement
+          body: formElement,
         });
 
         // Show success message
@@ -72,8 +72,9 @@ const ContactForm: React.FC = () => {
         onSubmit={handleSubmit}
         className="w-full space-y-3"
         name="contact"
-        netlify="true"
-        netlify-honeypot="bot-field"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="hidden">
@@ -82,6 +83,7 @@ const ContactForm: React.FC = () => {
 
         <div className="grid grid-cols-2 gap-3">
           <div className="relative">
+            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               id="businessName"
@@ -184,7 +186,8 @@ const ContactForm: React.FC = () => {
               </svg>
               <h3 className="text-xl font-bold mb-2">Thank You!</h3>
               <p className="text-base">
-                Your information was submitted successfully! We'll contact you soon!
+                Your information was submitted successfully! We'll contact you
+                soon!
               </p>
             </div>
           </motion.div>
