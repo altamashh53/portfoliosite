@@ -49,12 +49,7 @@ const Hero: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-span-2 mb-8">
-                  <p className="text-sm sm:text-base text-white font-bold">
-                    Get a Free Audit That Shows Exactly How Many Customers
-                    You're Losing—And How We Can Fix It.
-                  </p>
-                </div>
+                <div className="col-span-2 mb-8"></div>
                 <ContactForm />
               </motion.div>
             </div>
