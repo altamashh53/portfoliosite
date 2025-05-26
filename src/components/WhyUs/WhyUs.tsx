@@ -5,8 +5,8 @@ import { Check, X } from "lucide-react";
 const comparisonData = [
   {
     aspect: "Cost",
-    you: "Starting from $300",
-    others: "$1000+",
+    you: "Starting from $500",
+    others: "$2000+",
     othersAgencies: "$$$",
   },
   {

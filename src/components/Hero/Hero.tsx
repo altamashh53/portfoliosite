@@ -45,7 +45,8 @@ const Hero: React.FC = () => {
                       70%
                     </h2>
                     <p className="text-sm sm:text-base mt-2 text-white font-bold">
-                      of Businesses get ignored due to a weak GBP & Poor Websites.
+                      of Businesses get ignored due to a weak GBP & Poor
+                      Websites.
                     </p>
                   </div>
                 </div>
