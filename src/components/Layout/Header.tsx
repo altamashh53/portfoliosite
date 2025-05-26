@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SquarePen, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Link } from "../common/Link";
 import MobileMenu from "./MobileMenu";
 
@@ -35,7 +35,11 @@ const Header: React.FC = () => {
       <header className="fixed top-0 left-0 right-0 w-full py-4 px-4 sm:px-8 md:px-12 lg:px-16 z-30 bg-black/20 backdrop-blur-sm">
         <div className="max-w-[1400px] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <SquarePen className="w-6 h-6 text-white" />
+            <img
+              src="/images/logo.webp.webp"
+              alt="TGO Logo"
+              className="w-6 h-6 object-contain"
+            />
             <span className="text-xl font-medium text-white">TGO</span>
           </div>
 
