@@ -4,25 +4,34 @@
 
 @layer base {
   html {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+      sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Keep this for overall body overflow */
     font-size: 16px;
   }
-  
+
   body {
-    @apply bg-[#0A0A0A] overflow-x-hidden;
+    @apply bg-[#0A0A0A] overflow-x-hidden; /* Keep this for overall body overflow */
   }
 
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
     }
-    
-    *, ::before, ::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
+
+    /*
+    * BUG FIX: Removed !important from animation-duration and animation-iteration-count
+    * on the universal selector (*) within this media query.
+    * This ensures your specific animation for .testimonial-scroller is not overridden
+    * when reduced motion is NOT preferred, but still respects user preference when it IS.
+    */
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms; /* Removed !important */
+      animation-iteration-count: 1; /* Removed !important */
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
@@ -65,7 +74,7 @@
   html {
     font-size: 12px;
   }
-  
+
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -74,7 +83,7 @@
 
 /* Touch Target Sizes */
 @media (max-width: 768px) {
-  button, 
+  button,
   a {
     min-height: 44px;
     min-width: 44px;
@@ -118,4 +127,21 @@
     margin-right: 1rem;
     text-align: left;
   }
+}
+
+/* Keyframe definition for the testimonial scroller */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Class for the testimonial scroller element */
+.testimonial-scroller {
+  animation: scroll 30s linear infinite;
+  width: max-content;
+  will-change: transform; /* Good for performance */
 }

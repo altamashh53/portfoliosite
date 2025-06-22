@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
-import { Link } from "../common/Link";
 import MobileMenu from "./MobileMenu";
 
 const Header: React.FC = () => {
