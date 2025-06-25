@@ -9,6 +9,7 @@ import Process from "./components/Process/Process";
 import FAQ from "./components/FAQ/FAQ";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
 import Preloader from "./components/Preloader/Preloader";
+import LocalSearchInsights from "./components/LocalSearchInsights/LocalSearchInsights";
 import "./index.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Header />
         <main className="flex-grow">
           <Hero />
+          <LocalSearchInsights />
           <Services />
           <WhyUs />
           <Testimonials />

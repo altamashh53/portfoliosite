@@ -161,6 +161,17 @@ const ContactForm: React.FC = () => {
         </motion.button>
       </motion.form>
 
+      <button
+        type="button"
+        onClick={() => {
+          const el = document.getElementById("process");
+          if (el) el.scrollIntoView({ behavior: "smooth" });
+        }}
+        className="w-full mt-2 py-1.5 px-3 text-sm bg-transparent border border-[#8CEAB3] text-[#8CEAB3] font-medium rounded-md transition-all hover:bg-[#8CEAB3] hover:text-black"
+      >
+        Tell Me More
+      </button>
+
       <AnimatePresence>
         {showSuccess && (
           <motion.div
