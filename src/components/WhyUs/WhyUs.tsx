@@ -11,13 +11,13 @@ const comparisonData = [
   },
   {
     aspect: "Experience",
-    you: "Senior-Level Experts",
+    you: "Vetted Developers",
     others: "Mixed-Level Teams",
     othersAgencies: "Mixed-Level Teams",
   },
   {
     aspect: "Turnaround Time",
-    you: "Within 1 Week",
+    you: "Within 3 days",
     others: "Weeks",
     othersAgencies: "Months",
   },
@@ -29,14 +29,14 @@ const comparisonData = [
   },
   {
     aspect: "Revisions",
-    you: "Unlimited",
-    others: "Limited",
+    you: "Until You're Satisfied",
+    others: "Too Formal",
     othersAgencies: "Limited per project",
   },
   {
     aspect: "Communication",
-    you: "24/7 Support",
-    others: "Monday-Friday",
+    you: "One Message Away",
+    others: "Limited",
     othersAgencies: "Back-forth emails",
   },
 ];
