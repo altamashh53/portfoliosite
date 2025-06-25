@@ -42,6 +42,7 @@ const LocalSearchInsights: React.FC<{
             <br />
             <span className="text-white">How are you being found?</span>
             <br />
+            <br />
             <span className="text-[#8CEAB3]">
               If your site’s old, confusing or nonexistent—they’ll assume your
               business <i> must be the same.</i>
