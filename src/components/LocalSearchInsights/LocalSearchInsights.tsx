@@ -40,10 +40,11 @@ const LocalSearchInsights: React.FC<{
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
             Your customers are searching.
             <br />
-            <span className="text-white">Are you being found?</span>
+            <span className="text-white">How are you being found?</span>
+            <br />
             <span className="text-[#8CEAB3]">
-              & If your site’s slow, busted, or nonexistent—they’ll assume
-              your business is too.
+              If your site’s old, confusing or nonexistent—they’ll assume your
+              business <i> must be the same.</i>
             </span>
           </h2>
         </motion.div>
