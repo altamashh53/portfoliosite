@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe, MapPin, Target, ShieldCheck } from 'lucide-react';
+import { Globe, MapPin, Target } from 'lucide-react';
 
 const services = [
   {
@@ -17,11 +17,6 @@ const services = [
     icon: <Target className="w-6 h-6 text-[#8CEAB3]" />,
     title: 'Marketing',
     description: 'Targeted Marketing Strategies: Reach the right people at the right time for maximum impact.'
-  },
-  {
-    icon: <ShieldCheck className="w-6 h-6 text-[#8CEAB3]" />,
-    title: 'GBP Suspension Recovery',
-    description: 'Profile Suspended? We\'ll help you get it back within 1 week.'
   }
 ];
 
@@ -29,7 +24,7 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-[#0A0A0A]">
       <div className="max-w-[1400px] mx-auto">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -37,8 +32,8 @@ const Services: React.FC = () => {
         >
           Our Services
         </motion.h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}

@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import WhyUs from "./components/WhyUs/WhyUs";
 import Testimonials from "./components/Testimonials/Testimonials";
+import CaseStudy from "./components/CaseStudy/CaseStudy";
 import Process from "./components/Process/Process";
 import FAQ from "./components/FAQ/FAQ";
 import FinalCTA from "./components/FinalCTA/FinalCTA";
@@ -16,7 +17,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setTimeout(() => {''
       setIsLoading(false);
     }, 2000);
 
@@ -33,9 +34,10 @@ function App() {
           <Hero />
           <LocalSearchInsights />
           <Services />
-          <WhyUs />
-          <Testimonials />
           <Process />
+          <Testimonials />
+          <CaseStudy />
+          <WhyUs />
           <FAQ />
           <FinalCTA />
         </main>
