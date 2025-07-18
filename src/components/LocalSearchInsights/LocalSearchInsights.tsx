@@ -44,8 +44,8 @@ const LocalSearchInsights: React.FC<{
             <br />
             <br />
             <span className="text-[#8CEAB3]">
-              If your site’s old, confusing or nonexistent—they’ll assume your
-              business <i> must </i>be the same.
+              If your site’s old, confusing or nonexistent—they’ll
+              <i> assume </i>your business must be the same.
             </span>
           </h2>
         </motion.div>
@@ -96,7 +96,7 @@ const LocalSearchInsights: React.FC<{
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center px-8 py-4 bg-[#8CEAB3] text-black font-semibold rounded-lg hover:bg-[#7DD9A3] transition-all duration-300 text-sm"
           >
-            Request Free Audit
+            SHOW ME HOW!
           </motion.a>
         </motion.div>
       </div>

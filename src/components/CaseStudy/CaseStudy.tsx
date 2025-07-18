@@ -104,6 +104,22 @@ const CaseStudy: React.FC = () => {
                 </div>
               </div>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.6 }}
+            >
+              <a
+                href="https://ennobletechnology.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#8CEAB3] hover:bg-[#7BD9A3] text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+              >
+                Check Them Out
+              </a>
+            </motion.div>
           </div>
 
           {/* Right Side - Video Testimonial */}
@@ -216,7 +232,22 @@ const CaseStudy: React.FC = () => {
               </div>
             </div>
           </motion.div>
-
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6 }}
+            className="text-center"
+          >
+            <a
+              href="https://ennobletechnology.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#8CEAB3] hover:bg-[#7BD9A3] text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Check Them Out
+            </a>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
