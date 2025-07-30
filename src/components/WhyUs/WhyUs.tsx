@@ -5,15 +5,15 @@ import { Check, X } from "lucide-react";
 const comparisonData = [
   {
     aspect: "Cost",
-    you: "Starting from $500",
+    you: "Starting from $1000",
     others: "$2000+",
     othersAgencies: "$$$",
   },
   {
-    aspect: "Experience",
-    you: "Vetted Developers",
-    others: "Mixed-Level Teams",
-    othersAgencies: "Mixed-Level Teams",
+    aspect: "Outcome",
+    you: "Technical Fancinesss",
+    others: "Strictly Results Focused",
+    othersAgencies: "Look-Good Tech",
   },
   {
     aspect: "Turnaround Time",
@@ -30,7 +30,7 @@ const comparisonData = [
   {
     aspect: "Revisions",
     you: "Until You're Satisfied",
-    others: "Too Formal",
+    others: "Limited",
     othersAgencies: "Limited per project",
   },
   {

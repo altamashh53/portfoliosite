@@ -10,7 +10,7 @@ const steps = [
   },
   {
     number: "02",
-    title: "Final Project Offer",
+    title: "Project Finalization",
     description:
       "After understanding your needs, we craft a customized proposal that details the deliverables, timeline, and investment—no hidden fees, complete transparency.",
   },

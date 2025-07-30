@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ContactForm from '../ContactForm/ContactForm';
+import ContactForm2 from '../ContactForm2/ContactForm2';
 
 const FinalCTA: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const FinalCTA: React.FC = () => {
           >
             Get a Free Audit That Shows Exactly How Many Customers You're Losing—And How We Can Fix It.
           </motion.p>
-          <ContactForm />
+          <ContactForm2 />
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ const testimonials = [
     image: "/images/img1.webp",
   },
   {
-    company: "Haybales & Chandeliers LTD",
+    company: "Wedding Planner UK",
     result:
       "We built a custom website and ran targeted Meta and Google Ad campaigns.The campaign targeted local areas & was successful.",
     rating: 5,
