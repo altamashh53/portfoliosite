@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import MobileMenu from "./MobileMenu";
+import { smoothScrollTo, openGmail } from "../common/SmoothScroll";
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleBookCall = (e: React.MouseEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:altamashcreates@gmail.com?subject=${encodeURIComponent(
-      "Business Growth Consultation"
-    )}&body=${encodeURIComponent(
+    openGmail(
+      "altamashcreates@gmail.com",
+      "Business Growth Consultation",
       "I wanna see how you'll help my business grow, let's book a meeting."
-    )}`;
-    window.location.href = mailtoLink;
+    );
   };
 
   const handleSmoothScroll = (
@@ -20,13 +20,7 @@ const Header: React.FC = () => {
     targetId: string
   ) => {
     e.preventDefault();
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+    smoothScrollTo(targetId, 100);
   };
 
   return (

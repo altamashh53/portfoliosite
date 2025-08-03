@@ -1,10 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Search, MapPin, TrendingUp, Users } from "lucide-react";
+import { openGmail } from "../common/SmoothScroll";
 
-const LocalSearchInsights: React.FC<{
-  handleSmoothScroll?: (e: React.MouseEvent, target: string) => void;
-}> = ({ handleSmoothScroll }) => {
+const LocalSearchInsights: React.FC = () => {
   const stats = [
     {
       icon: <Search className="w-5 h-5 text-[#8CEAB3]" />,
@@ -30,16 +29,18 @@ const LocalSearchInsights: React.FC<{
 
   const handleBookCall = (e: React.MouseEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:altamashcreates@gmail.com?subject=${encodeURIComponent(
-      "Business Growth Consultation"
-    )}&body=${encodeURIComponent(
+    openGmail(
+      "altamashcreates@gmail.com",
+      "Business Growth Consultation",
       "I wanna see how you'll help my business grow, let's book a meeting."
-    )}`;
-    window.location.href = mailtoLink;
+    );
   };
 
   return (
-    <section className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-16 bg-[#0A0A0A]">
+    <section
+      id="localSearchInsights"
+      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-16 bg-[#0A0A0A]"
+    >
       <div className="max-w-[1400px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -93,26 +94,14 @@ const LocalSearchInsights: React.FC<{
             first business customers see, trust, and choose.
           </p>
 
-          <motion.a
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: "smooth",
-              });
-            }}
+          <motion.button
+            onClick={handleBookCall}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center px-8 py-4 bg-[#8CEAB3] text-black font-semibold rounded-lg hover:bg-[#7DD9A3] transition-all duration-300 text-sm"
           >
-            <button
-              onClick={handleBookCall}
-              className="text-black text-sm md:text-base border-b border-white hover:border-opacity-100 border-opacity-50 transition-all flex items-center gap-1"
-            >
-              SHOW ME HOW!
-            </button>
-          </motion.a>
+            SHOW ME HOW!
+          </motion.button>
         </motion.div>
       </div>
     </section>

@@ -1,26 +1,37 @@
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
+import { openGmail } from "../common/SmoothScroll";
 
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
-  handleSmoothScroll: (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => void;
+  handleSmoothScroll: (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => void;
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, handleSmoothScroll }) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({
+  isOpen,
+  onClose,
+  handleSmoothScroll,
+}) => {
   const handleBookCall = (e: React.MouseEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:altamashcreates@gmail.com?subject=${encodeURIComponent('Business Growth Consultation')}&body=${encodeURIComponent("I wanna see how you'll help my business grow, let's book a meeting.")}`;
-    window.location.href = mailtoLink;
+    openGmail(
+      "altamashcreates@gmail.com",
+      "Business Growth Consultation",
+      "I wanna see how you'll help my business grow, let's book a meeting."
+    );
     onClose();
   };
 
   const menuItems = [
-    { href: '#services', label: 'Services', id: 'services' },
-    { href: '#testimonials', label: 'Testimonials', id: 'testimonials' },
-    { href: '#faq', label: 'FAQ', id: 'faq' },
-    { href: '#finalcta', label: 'Request Free Audit', id: 'finalcta' },
+    { href: "#services", label: "Services", id: "services" },
+    { href: "#testimonials", label: "Testimonials", id: "testimonials" },
+    { href: "#faq", label: "FAQ", id: "faq" },
+    { href: "#finalcta", label: "Request Free Audit", id: "finalcta" },
   ];
 
   return (
@@ -35,10 +46,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, handleSmoothSc
             onClick={onClose}
           />
           <motion.div
-            initial={{ x: '100%' }}
+            initial={{ x: "100%" }}
             animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ type: 'tween', duration: 0.3 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "tween", duration: 0.3 }}
             className="fixed right-0 top-0 h-full w-[280px] bg-white z-50 p-6"
           >
             <button
@@ -47,7 +58,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, handleSmoothSc
             >
               <X size={24} />
             </button>
-            
+
             <nav className="mt-16">
               <ul className="space-y-6">
                 {menuItems.map((item) => (
