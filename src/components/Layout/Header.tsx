@@ -8,11 +8,7 @@ const Header: React.FC = () => {
 
   const handleBookCall = (e: React.MouseEvent) => {
     e.preventDefault();
-    openGmail(
-      "altamashcreates@gmail.com",
-      "Business Growth Consultation",
-      "I wanna see how you'll help my business grow, let's book a meeting."
-    );
+    window.open("https://forms.gle/6j6ogHtQjM6wci8y9", "_blank");
   };
 
   const handleSmoothScroll = (

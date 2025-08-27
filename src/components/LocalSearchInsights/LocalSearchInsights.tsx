@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Search, MapPin, TrendingUp, Users } from "lucide-react";
-import { openGmail } from "../common/SmoothScroll";
 
 const LocalSearchInsights: React.FC = () => {
   const stats = [
@@ -29,11 +28,7 @@ const LocalSearchInsights: React.FC = () => {
 
   const handleBookCall = (e: React.MouseEvent) => {
     e.preventDefault();
-    openGmail(
-      "altamashcreates@gmail.com",
-      "Business Growth Consultation",
-      "I wanna see how you'll help my business grow, let's book a meeting."
-    );
+    window.open("https://forms.gle/6j6ogHtQjM6wci8y9", "_blank");
   };
 
   return (
@@ -90,8 +85,8 @@ const LocalSearchInsights: React.FC = () => {
           className="text-center"
         >
           <p className="text-white text-opacity-70 text-lg mb-6 max-w-3xl mx-auto">
-            While your competitors struggle to get noticed, you could be the
-            first business customers see, trust, and choose.
+            Stop worrying about marketing. I’ll set up a system that brings you
+            calls on autopilot.
           </p>
 
           <motion.button

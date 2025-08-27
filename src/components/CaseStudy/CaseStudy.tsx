@@ -99,7 +99,7 @@ const CaseStudy: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <Zap className="w-5 h-5 text-[#8CEAB3]" />
                   <span className="text-white text-opacity-80">
-                    Consistent Local Leads Ever Since
+                    6 New Customers in 30 days, with more coming in.
                   </span>
                 </div>
               </div>
