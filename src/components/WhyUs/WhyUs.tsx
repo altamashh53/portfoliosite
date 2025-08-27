@@ -11,8 +11,8 @@ const comparisonData = [
   },
   {
     aspect: "Outcome",
-    you: "Technical Fancinesss",
-    others: "Strictly Results Focused",
+    you: "Strictly Results Focused",
+    others: "Technical Fancinesss",
     othersAgencies: "Look-Good Tech",
   },
   {
