@@ -93,7 +93,7 @@ const LocalSearchInsights: React.FC = () => {
             onClick={handleBookCall}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center px-8 py-4 bg-[#8CEAB3] text-black font-semibold rounded-lg hover:bg-[#7DD9A3] transition-all duration-300 text-sm"
+            className="inline-flex items-center px-8 py-4 bg-[#8CEAB3] text-black font-semibold rounded-lg hover:bg-[#7DD9A3] transition-all duration-300 text-md"
           >
             SHOW ME HOW!
           </motion.button>
