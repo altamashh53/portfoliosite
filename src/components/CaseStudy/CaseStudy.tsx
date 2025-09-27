@@ -77,11 +77,9 @@ const CaseStudy: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <TrendingUp className="w-5 h-5 text-[#8CEAB3]" />
                   <div>
-                    <span className="text-2xl font-bold text-[#8CEAB3]">
-                      50%
-                    </span>
+                    <span className="text-2xl font-bold text-[#8CEAB3]">6</span>
                     <span className="text-white text-opacity-80 ml-2">
-                      more website traffic
+                      New Customers
                     </span>
                   </div>
                 </div>
@@ -90,10 +88,10 @@ const CaseStudy: React.FC = () => {
                   <MapPin className="w-5 h-5 text-[#8CEAB3]" />
                   <div>
                     <span className="text-2xl font-bold text-[#8CEAB3]">
-                      34%
+                      50%
                     </span>
                     <span className="text-white text-opacity-80 ml-2">
-                      increase in GBP views
+                      increase in online inquires.
                     </span>
                   </div>
                 </div>
@@ -101,7 +99,7 @@ const CaseStudy: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <Zap className="w-5 h-5 text-[#8CEAB3]" />
                   <span className="text-white text-opacity-80">
-                    6 New Customers in 30 days, with more coming in.
+                    Constant stream of new customers.
                   </span>
                 </div>
               </div>
@@ -211,9 +209,9 @@ const CaseStudy: React.FC = () => {
               <div className="flex items-center gap-3">
                 <TrendingUp className="w-5 h-5 text-[#8CEAB3]" />
                 <div>
-                  <span className="text-2xl font-bold text-[#8CEAB3]">50%</span>
+                  <span className="text-2xl font-bold text-[#8CEAB3]">6</span>
                   <span className="text-white text-opacity-80 ml-2">
-                    more website traffic
+                    New Customers
                   </span>
                 </div>
               </div>
@@ -221,9 +219,9 @@ const CaseStudy: React.FC = () => {
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-[#8CEAB3]" />
                 <div>
-                  <span className="text-2xl font-bold text-[#8CEAB3]">34%</span>
+                  <span className="text-2xl font-bold text-[#8CEAB3]">50%</span>
                   <span className="text-white text-opacity-80 ml-2">
-                    increase in GBP views
+                    increase in online inquires.
                   </span>
                 </div>
               </div>
@@ -231,7 +229,7 @@ const CaseStudy: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Zap className="w-5 h-5 text-[#8CEAB3]" />
                 <span className="text-white text-opacity-80">
-                  6 New Customers in 30 days, & steadily increasing.
+                  Constant stream of new customers.
                 </span>
               </div>
             </div>
