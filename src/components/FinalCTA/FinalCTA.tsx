@@ -1,10 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import ContactForm2 from '../ContactForm2/ContactForm2';
+import React from "react";
+import { motion } from "framer-motion";
+import ContactForm2 from "../ContactForm2/ContactForm2";
 
 const FinalCTA: React.FC = () => {
   return (
-    <section id="finalcta" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-black">
+    <section
+      id="finalcta"
+      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-black"
+    >
       <div className="max-w-[1400px] mx-auto">
         <div className="max-w-2xl mx-auto text-center">
           <motion.h2
@@ -13,7 +16,9 @@ const FinalCTA: React.FC = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight"
           >
-            It's simple, yet most businesses ignore it, think it's too expensive, or it's not worth it - that's why they <i> don't grow & struggle</i>.
+            It's simple, yet most businesses ignore it, think it's too
+            expensive, or it's not worth it - that's why they{" "}
+            <i> don't grow & struggle</i>.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +27,8 @@ const FinalCTA: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-white text-opacity-60 mb-8"
           >
-            Get a Free Audit That Shows Exactly How Many Customers You're Losing—And How We Can Fix It.
+            Get a Free Audit That Shows Exactly How Many Customers You're Losing
+            - And How We Can Fix It.
           </motion.p>
           <ContactForm2 />
         </div>
