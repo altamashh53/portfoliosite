@@ -45,7 +45,7 @@ const Header: React.FC = () => {
               onClick={(e) => handleSmoothScroll(e, "testimonials")}
               className="text-sm text-white text-opacity-60 hover:text-opacity-100 transition-all"
             >
-              Testimonials
+              Previous Work
             </a>
             <a
               href="#faq"

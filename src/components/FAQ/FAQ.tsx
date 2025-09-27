@@ -1,35 +1,57 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqs = [
   {
-    question: 'How long does the process take?',
-    answer: 'Typically, we deliver your first version within 7 days. Revisions and final tweaks depend on your feedback speed.'
+    question: "How long does the process take?",
+    answer:
+      "First draft in 7 days or less. Final delivery depends on your feedback speed.",
   },
   {
-    question: 'What does it cost?',
-    answer: 'We operate on a transparent flat-fee model. No confusing retainers or hidden charges. Pricing is discussed clearly after your free consultation.'
+    question: "What does it cost?",
+    answer:
+      "Projects start from $500. No hidden fees, no retainers unless you choose ongoing work.",
   },
   {
-    question: 'What support do you offer?',
-    answer: '24/7 dedicated support via email, chat, or phone until your project is completed and even afterward for 30 days.'
+    question: "What support do you offer?",
+    answer:
+      "Full support during delivery, plus optional ongoing help with growth and management.",
   },
   {
-    question: 'Do I own everything once it is done?',
-    answer: 'Yes. You get full ownership of your website, assets, and any accounts we set up.'
+    question: "Do I own everything once it is done?",
+    answer: "Yes. All assets, copy, and designs are 100% yours once paid.",
   },
   {
-    question: 'Can you help with ongoing marketing?',
-    answer: 'Yes. We offer ongoing marketing support plans if you want continued growth after launch.'
-  }
+    question: "Can you help with ongoing marketing?",
+    answer:
+      "Yes. We handle campaigns, ads, and optimization if you want more than just a one-off project (most do),",
+  },
+  {
+    question: "What if it doesn't work for my business?",
+    answer:
+      "We scope carefully before starting. If we can't deliver, we won't take the project.",
+  },
+  {
+    question: "Do I need to manage anything technical?",
+    answer:
+      "No. We handle setup, integrations, and tracking—so you stay focused on running your business.",
+  },
+  {
+    question: "Am I locked into a contract?",
+    answer:
+      "No long-term lock-ins. Ongoing work is month-to-month and cancelable anytime.",
+  },
 ];
 
 const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-[#0A0A0A]">
+    <section
+      id="faq"
+      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-[#0A0A0A]"
+    >
       <div className="max-w-[1400px] mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -63,10 +85,12 @@ const FAQ: React.FC = () => {
               </button>
               <motion.div
                 initial={false}
-                animate={{ height: openIndex === index ? 'auto' : 0 }}
+                animate={{ height: openIndex === index ? "auto" : 0 }}
                 className="overflow-hidden"
               >
-                <p className="px-6 pb-4 text-white text-opacity-60">{faq.answer}</p>
+                <p className="px-6 pb-4 text-white text-opacity-60">
+                  {faq.answer}
+                </p>
               </motion.div>
             </motion.div>
           ))}

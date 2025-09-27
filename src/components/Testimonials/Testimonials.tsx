@@ -31,6 +31,13 @@ const testimonials = [
     image: "/images/img4.webp",
   },
   {
+    company: "Plumber Redesign",
+    result:
+      "A concept homepage design showcasing a modern, user-friendly layout for a local plumber, emphasizing simplicity and deriving more calls",
+    rating: 5,
+    image: "/images/402.webp",
+  },
+  {
     company: "Pricing Cards",
     result:
       "Developed a conversion-focused pricing section—clear structure, strong CTA, and trust-building design elements for better decision-making.",
@@ -43,6 +50,13 @@ const testimonials = [
       "Crafted detailed service pages with rich visuals, keyword-focused copy, and strong internal linking to support SEO and lead gen.",
     rating: 5,
     image: "/images/img6.webp",
+  },
+  {
+    company: "Drain Cleaning Business",
+    result:
+      "A concept homepage layout for a plumbing and drain service, showcasing services, and customer testimonials for quick conversions.",
+    rating: 5,
+    image: "/images/Paysen.webp",
   },
 ];
 

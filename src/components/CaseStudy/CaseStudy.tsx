@@ -37,7 +37,9 @@ const CaseStudy: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="space-y-4"
             >
-              <h3 className="text-xl font-semibold text-white">What We Did</h3>
+              <h3 className="text-xl font-semibold text-white">
+                How We Helped -{" "}
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-[#8CEAB3] rounded-full mt-2 flex-shrink-0"></div>
@@ -169,7 +171,9 @@ const CaseStudy: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-semibold text-white">What We Did</h3>
+            <h3 className="text-xl font-semibold text-white">
+              How We Helped -{" "}
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-[#8CEAB3] rounded-full mt-2 flex-shrink-0"></div>
@@ -227,7 +231,7 @@ const CaseStudy: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Zap className="w-5 h-5 text-[#8CEAB3]" />
                 <span className="text-white text-opacity-80">
-                  Boosted lead quality & trust
+                  6 New Customers in 30 days, & steadily increasing.
                 </span>
               </div>
             </div>

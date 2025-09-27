@@ -29,7 +29,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 
   const menuItems = [
     { href: "#services", label: "Services", id: "services" },
-    { href: "#testimonials", label: "Testimonials", id: "testimonials" },
+    { href: "#testimonials", label: "Previous Work", id: "testimonials" },
     { href: "#faq", label: "FAQ", id: "faq" },
     { href: "#finalcta", label: "Request Free Audit", id: "finalcta" },
   ];

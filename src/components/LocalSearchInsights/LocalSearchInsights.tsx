@@ -50,8 +50,8 @@ const LocalSearchInsights: React.FC = () => {
             <br />
             <br />
             <span className="text-[#8CEAB3]">
-              If your site’s old, confusing or nonexistent—they’ll
-              <i> assume </i>your business must be the same.
+              If your business looks old, confusing or nonexistent online,
+              people <i> assume</i> you're not worth their money.
             </span>
           </h2>
         </motion.div>

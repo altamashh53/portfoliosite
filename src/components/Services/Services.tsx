@@ -1,28 +1,34 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Globe, MapPin, Target } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Globe, MapPin, Target } from "lucide-react";
 
 const services = [
   {
     icon: <Globe className="w-6 h-6 text-[#8CEAB3]" />,
-    title: 'Websites',
-    description: 'Conversion-Focused Websites: Tailored designs that generate leads and grow your business online.'
+    title: "Websites",
+    description:
+      "Conversion-Focused Websites: Tailored designs that generate leads and grow your business online.",
   },
   {
     icon: <MapPin className="w-6 h-6 text-[#8CEAB3]" />,
-    title: 'GBP Optimization',
-    description: 'Google Business Profile Optimization: Get found faster—show up at the top when customers search for your services.'
+    title: "GBP Optimization",
+    description:
+      "Google Business Profile Optimization: Get found faster—show up at the top when customers search for your services.",
   },
   {
     icon: <Target className="w-6 h-6 text-[#8CEAB3]" />,
-    title: 'Marketing',
-    description: 'Targeted Marketing Strategies: Reach the right people at the right time for maximum impact.'
-  }
+    title: "Paid Ads",
+    description:
+      "Targeted Marketing Strategies: Reach the right people at the right time for maximum impact.",
+  },
 ];
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-[#0A0A0A]">
+    <section
+      id="services"
+      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-[#0A0A0A]"
+    >
       <div className="max-w-[1400px] mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -43,11 +49,13 @@ const Services: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-white bg-opacity-5 rounded-lg p-6 backdrop-blur-sm hover:bg-opacity-10 transition-all"
             >
-              <div className="mb-4">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
-              <p className="text-white text-opacity-60 text-sm">{service.description}</p>
+              <div className="mb-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                {service.title}
+              </h3>
+              <p className="text-white text-opacity-60 text-sm">
+                {service.description}
+              </p>
             </motion.div>
           ))}
         </div>

@@ -157,11 +157,11 @@ const ContactForm: React.FC = () => {
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-1.5 px-3 text-sm bg-[#8CEAB3] text-black font-medium rounded-md transition-all ${
+          className={`w-full py-1.5 px-3 text-md bg-[#8CEAB3] text-black font-medium rounded-md transition-all ${
             isSubmitting ? "opacity-70" : "hover:bg-opacity-90"
           }`}
         >
-          {isSubmitting ? "Sending..." : "Book Free Website Mockup + GBP Audit"}
+          {isSubmitting ? "Sending..." : "Book Free Marketing Audit"}
         </motion.button>
       </motion.form>
 
