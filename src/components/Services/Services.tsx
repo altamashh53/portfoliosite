@@ -13,7 +13,7 @@ const services = [
     icon: <MapPin className="w-6 h-6 text-[#8CEAB3]" />,
     title: "GBP Optimization",
     description:
-      "Google Business Profile Optimization: Get found faster—show up at the top when customers search for your services.",
+      "Google Business Profile Optimization: Get found faster - show up at the top when customers search for your services.",
   },
   {
     icon: <Target className="w-6 h-6 text-[#8CEAB3]" />,
