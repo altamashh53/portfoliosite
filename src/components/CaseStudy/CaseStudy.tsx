@@ -38,7 +38,7 @@ const CaseStudy: React.FC = () => {
               className="space-y-4"
             >
               <h3 className="text-xl font-semibold text-white">
-                How We Helped -{" "}
+                What We Did -{" "}
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">

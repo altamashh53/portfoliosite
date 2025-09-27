@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
                 className="backdrop-blur-sm bg-black/30 p-4 rounded-lg sm:p-6"
               >
                 <h1 className="text-[1.5rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.2] font-bold text-white tracking-tighter mb-6 sm:mb-8 md:mb-12">
-                  Helping Local Businesses Get Found, Chosen, & Paid.
+                  Getting Home Service Businesses Found, Chosen, & Paid.
                 </h1>
                 <div className="grid grid-cols-2 gap-4 mb-6 sm:gap-6 sm:mb-8">
                   <div className="flex flex-col">
