@@ -17,7 +17,7 @@ const LocalSearchInsights: React.FC = () => {
     {
       icon: <TrendingUp className="w-5 h-5 text-[#8CEAB3]" />,
       stat: "2.7x",
-      description: "more likely to be trusted with optimized GBP",
+      description: "more likely to be trusted with a polished online presence",
     },
     {
       icon: <Users className="w-5 h-5 text-[#8CEAB3]" />,
