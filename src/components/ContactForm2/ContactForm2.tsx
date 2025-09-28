@@ -167,7 +167,13 @@ const ContactForm: React.FC = () => {
 
       <button
         onClick={handleBookCall}
-        className="w-full mt-2 py-1.5 px-3 text-sm bg-transparent border border-[#8CEAB3] text-[#8CEAB3] font-medium rounded-md transition-all hover:bg-[#8CEAB3] hover:text-black"
+        className="
+  w-full mt-3 py-3 px-4 text-lg font-semibold rounded-md
+  border border-[#8CEAB3] text-[#8CEAB3]
+  transition-transform duration-150 ease-out
+  active:scale-95 focus:outline-none
+  [-webkit-tap-highlight-color:transparent] [touch-action:manipulation]
+"
       >
         Book a Consulation Call
       </button>

@@ -5,21 +5,21 @@ import { Globe, MapPin, Target } from "lucide-react";
 const services = [
   {
     icon: <Globe className="w-6 h-6 text-[#8CEAB3]" />,
-    title: "Websites",
+    title: "Websites & Branding",
     description:
-      "Conversion-Focused Websites: Tailored designs that generate leads and grow your business online.",
+      "Conversion-Focused Websites & More: Tailored designs that make you stand out, display your experience, & build credibility online.",
   },
   {
     icon: <MapPin className="w-6 h-6 text-[#8CEAB3]" />,
-    title: "GBP Optimization",
+    title: "Local SEO",
     description:
-      "Google Business Profile Optimization: Get found faster - show up at the top when customers search for your services.",
+      "Google Business Profile Optimization & More: Get found faster - show up at the top organically when customers search for your services.",
   },
   {
     icon: <Target className="w-6 h-6 text-[#8CEAB3]" />,
     title: "Paid Ads",
     description:
-      "Targeted Marketing Strategies: Reach the right people at the right time for maximum impact.",
+      "Targeted Marketing Strategies - Google, Meta & More: Reach the right people at the right time for instant leads.",
   },
 ];
 
@@ -27,7 +27,7 @@ const Services: React.FC = () => {
   return (
     <section
       id="services"
-      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-[#0A0A0A]"
+      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20 bg-[#0A0A0A]"
     >
       <div className="max-w-[1400px] mx-auto">
         <motion.h2

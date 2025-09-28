@@ -32,27 +32,13 @@ const ContactForm: React.FC = () => {
 
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
-
       try {
-        // Get the form element
         const form = e.target as HTMLFormElement;
-
-        // Create form data for submission
         const formElement = new FormData(form);
+        await fetch("/", { method: "POST", body: formElement });
 
-        // Submit the form to Netlify
-        await fetch("/", {
-          method: "POST",
-          body: formElement,
-        });
-
-        // Show success message
         setShowSuccess(true);
-
-        // Reset form
         setFormData({ businessName: "", location: "", contact: "" });
-
-        // Hide success message after 5 seconds
         setTimeout(() => setShowSuccess(false), 5000);
       } catch (error) {
         console.error("Form submission error:", error);
@@ -71,7 +57,7 @@ const ContactForm: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         onSubmit={handleSubmit}
-        className="w-full space-y-3"
+        className="w-full space-y-4"
         name="contact"
         method="POST"
         data-netlify="true"
@@ -82,9 +68,9 @@ const ContactForm: React.FC = () => {
           <input name="bot-field" />
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        {/* Two-column on desktop, stacked on mobile */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="relative">
-            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               id="businessName"
@@ -92,7 +78,7 @@ const ContactForm: React.FC = () => {
               placeholder="Business Name"
               maxLength={50}
               required
-              className="w-full px-3 py-1.5 text-sm bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
+              className="w-full px-4 py-3 text-base sm:text-lg bg-white/10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
               value={formData.businessName}
               onChange={(e) =>
                 setFormData({ ...formData, businessName: e.target.value })
@@ -113,7 +99,7 @@ const ContactForm: React.FC = () => {
               name="location"
               placeholder="Location"
               required
-              className="w-full px-3 py-1.5 text-sm bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
+              className="w-full px-4 py-3 text-base sm:text-lg bg-white/10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
               value={formData.location}
               onChange={(e) =>
                 setFormData({ ...formData, location: e.target.value })
@@ -135,7 +121,7 @@ const ContactForm: React.FC = () => {
             name="contact"
             placeholder="Contact (Email/Phone)"
             required
-            className="w-full px-3 py-1.5 text-sm bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
+            className="w-full px-4 py-3 text-base sm:text-lg bg-white/10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
             value={formData.contact}
             onChange={(e) =>
               setFormData({ ...formData, contact: e.target.value })
@@ -154,7 +140,7 @@ const ContactForm: React.FC = () => {
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-1.5 px-3 text-md bg-[#8CEAB3] text-black font-medium rounded-md transition-all ${
+          className={`w-full py-3 px-4 text-lg font-semibold rounded-md bg-[#8CEAB3] text-black transition-all ${
             isSubmitting ? "opacity-70" : "hover:bg-opacity-90"
           }`}
         >
@@ -165,11 +151,18 @@ const ContactForm: React.FC = () => {
       <button
         type="button"
         onClick={() => smoothScrollTo("localSearchInsights", 100)}
-        className="w-full mt-2 py-1.5 px-3 text-sm bg-transparent border border-[#8CEAB3] text-[#8CEAB3] font-medium rounded-md transition-all hover:bg-[#8CEAB3] hover:text-black"
+        className="
+        w-full mt-3 py-3 px-4 text-lg font-semibold rounded-md
+        border border-[#8CEAB3] text-[#8CEAB3]
+        transition-transform duration-150 ease-out
+        active:scale-95 focus:outline-none
+        [-webkit-tap-highlight-color:transparent] [touch-action:manipulation]
+      "
       >
         Tell Me More
       </button>
 
+      {/* Success message */}
       <AnimatePresence>
         {showSuccess && (
           <motion.div

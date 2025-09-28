@@ -245,7 +245,7 @@ const CaseStudy: React.FC = () => {
               href="https://ennobletechnology.net"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#8CEAB3] hover:bg-[#7BD9A3] text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="w-full sm:w-auto block bg-[#8CEAB3] hover:bg-[#7BD9A3] text-black font-semibold text-xl px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
             >
               Check Them Out
             </a>

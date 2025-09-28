@@ -38,7 +38,7 @@ const Process: React.FC = () => {
   return (
     <section
       id="process"
-      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-20 bg-black"
+      className="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-20 bg-black"
     >
       <div className="max-w-[1400px] mx-auto">
         <motion.h2
