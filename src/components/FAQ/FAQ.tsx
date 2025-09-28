@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "How long does the process take?",
     answer:
-      "First draft in 7 days or less. Final delivery depends on your feedback speed.",
+      "Most Projects are launched in 7 days or less. Final delivery depends on your feedback speed.",
   },
   {
     question: "What does it cost?",
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Can you help with ongoing marketing?",
     answer:
-      "Yes. We handle campaigns, ads, and optimization if you want more than just a one-off project (most do),",
+      "Yes. We handle campaigns, ads, and optimization if you want more than just a one-off project (most do)",
   },
   {
     question: "What if it doesn't work for my business?",
