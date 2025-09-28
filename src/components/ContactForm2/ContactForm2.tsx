@@ -33,25 +33,17 @@ const ContactForm: React.FC = () => {
       setIsSubmitting(true);
 
       try {
-        // Get the form element
         const form = e.target as HTMLFormElement;
-
-        // Create form data for submission
         const formElement = new FormData(form);
 
-        // Submit the form to Netlify
         await fetch("/", {
           method: "POST",
           body: formElement,
         });
 
-        // Show success message
         setShowSuccess(true);
-
-        // Reset form
         setFormData({ businessName: "", location: "", contact: "" });
 
-        // Hide success message after 5 seconds
         setTimeout(() => setShowSuccess(false), 5000);
       } catch (error) {
         console.error("Form submission error:", error);
@@ -67,6 +59,7 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     window.open("https://forms.gle/6j6ogHtQjM6wci8y9", "_blank");
   };
+
   return (
     <>
       <motion.form
@@ -87,7 +80,6 @@ const ContactForm: React.FC = () => {
 
         <div className="grid grid-cols-2 gap-3">
           <div className="relative">
-            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               id="businessName"
@@ -95,7 +87,7 @@ const ContactForm: React.FC = () => {
               placeholder="Business Name"
               maxLength={50}
               required
-              className="w-full px-3 py-1.5 text-sm bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
+              className="w-full px-3 py-2 text-sm sm:text-base bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
               value={formData.businessName}
               onChange={(e) =>
                 setFormData({ ...formData, businessName: e.target.value })
@@ -116,7 +108,7 @@ const ContactForm: React.FC = () => {
               name="location"
               placeholder="Location"
               required
-              className="w-full px-3 py-1.5 text-sm bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
+              className="w-full px-3 py-2 text-sm sm:text-base bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
               value={formData.location}
               onChange={(e) =>
                 setFormData({ ...formData, location: e.target.value })
@@ -138,7 +130,7 @@ const ContactForm: React.FC = () => {
             name="contact"
             placeholder="Contact (Email/Phone)"
             required
-            className="w-full px-3 py-1.5 text-sm bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
+            className="w-full px-3 py-2 text-sm sm:text-base bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#8CEAB3]"
             value={formData.contact}
             onChange={(e) =>
               setFormData({ ...formData, contact: e.target.value })
@@ -152,12 +144,13 @@ const ContactForm: React.FC = () => {
           )}
         </div>
 
+        {/* Primary Button */}
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-1.5 px-3 text-md bg-[#8CEAB3] text-black font-medium rounded-md transition-all ${
+          className={`w-full py-3 px-4 text-base sm:text-lg bg-[#8CEAB3] text-black font-semibold rounded-md transition-all ${
             isSubmitting ? "opacity-70" : "hover:bg-opacity-90"
           }`}
         >
@@ -165,17 +158,18 @@ const ContactForm: React.FC = () => {
         </motion.button>
       </motion.form>
 
+      {/* Secondary Button */}
       <button
         onClick={handleBookCall}
         className="
-  w-full mt-3 py-3 px-4 text-lg font-semibold rounded-md
-  border border-[#8CEAB3] text-[#8CEAB3]
-  transition-transform duration-150 ease-out
-  active:scale-95 focus:outline-none
-  [-webkit-tap-highlight-color:transparent] [touch-action:manipulation]
-"
+          w-full mt-3 py-3 px-4 text-base sm:text-lg font-semibold rounded-md
+          border border-[#8CEAB3] text-[#8CEAB3]
+          transition-transform duration-150 ease-out
+          active:scale-95 focus:outline-none
+          [-webkit-tap-highlight-color:transparent] [touch-action:manipulation]
+        "
       >
-        Book a Consulation Call
+        Book a Consultation Call
       </button>
 
       <AnimatePresence>

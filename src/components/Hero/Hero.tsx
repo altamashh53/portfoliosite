@@ -25,7 +25,7 @@ const DesktopHero: React.FC = () => (
                     8/10
                   </h2>
                   <p className="text-sm sm:text-base mt-2 text-white font-bold">
-                    Google Searches become customers.
+                    Online Searches become customers.
                   </p>
                 </div>
 
