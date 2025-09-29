@@ -16,7 +16,7 @@ const FinalCTA: React.FC = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight"
           >
-            It's simple, yet most businesses ignore it & think it's not worth it
+            It's simple, yet most businesses think it's not worth it
             - that's why they <i> struggle</i>.
           </motion.h2>
           <motion.p
