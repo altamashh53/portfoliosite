@@ -25,7 +25,7 @@ const DesktopHero: React.FC = () => (
                     8/10
                   </h2>
                   <p className="text-sm sm:text-base mt-2 text-white font-bold">
-                    Online Searches become customers.
+                    Online searches become customers.
                   </p>
                 </div>
 
@@ -34,7 +34,7 @@ const DesktopHero: React.FC = () => (
                     70%
                   </h2>
                   <p className="text-sm sm:text-base mt-2 text-white font-bold">
-                    of Businesses get ignored.
+                    of businesses get ignored.
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const MobileHero: React.FC = () => (
               8/10
             </div>
             <p className="text-sm sm:text-xl md:text-2xl mt-2 text-gray-200 font-bold">
-              Google Searches become customers.
+              Online searches become customers.
             </p>
           </motion.div>
 
@@ -91,7 +91,7 @@ const MobileHero: React.FC = () => (
               70%
             </div>
             <p className="text-sm sm:text-xl md:text-2xl mt-2 text-gray-200 font-bold">
-              of Businesses get ignored.
+              of businesses get ignored.
             </p>
           </motion.div>
         </div>

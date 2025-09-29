@@ -44,7 +44,7 @@ const LocalSearchInsights: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
-            Your customers are searching.
+            People are searching.
             <br />
             <span className="text-white">How are you being found?</span>
             <br />
@@ -87,7 +87,7 @@ const LocalSearchInsights: React.FC = () => {
         >
           <p className="text-white text-opacity-70 text-lg mb-6 max-w-3xl mx-auto">
             Stop worrying about marketing. I’ll set up a system that brings you
-            calls on autopilot.
+            calls on autopilot, starting this week.
           </p>
 
           <motion.button
