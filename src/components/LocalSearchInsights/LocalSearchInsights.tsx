@@ -49,10 +49,13 @@ const LocalSearchInsights: React.FC = () => {
             <span className="text-white">How are you being found?</span>
             <br />
             <br />
+            Most of your competition looks old, confusing, or doesn't exist
+            online -
+            <br />& they are <i>MISSING OUT</i> on customers.
+            <br />
+            <br />
             <span className="text-[#8CEAB3]">
-              If your business looks old, confusing, or is nonexistent online -
-              <br />
-              You are <i>MISSING OUT</i> on customers.
+              That's where we help you <b> make more money.</b>
             </span>
           </h2>
         </motion.div>
@@ -86,7 +89,7 @@ const LocalSearchInsights: React.FC = () => {
           className="text-center"
         >
           <p className="text-white text-opacity-70 text-lg mb-6 max-w-3xl mx-auto">
-            Stop worrying about marketing. I’ll set up a system that brings you
+            Marketing isn't rocket science. I’ll set up a system that brings you
             calls on autopilot, starting this week.
           </p>
 
