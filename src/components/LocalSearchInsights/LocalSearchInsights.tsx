@@ -55,7 +55,8 @@ const LocalSearchInsights: React.FC = () => {
             <br />
             <br />
             <span className="text-[#8CEAB3]">
-              That's where we help you <b> make more money.</b>
+              That's where we help you{" "}
+              <b className="underline"> make more money.</b>
             </span>
           </h2>
         </motion.div>
