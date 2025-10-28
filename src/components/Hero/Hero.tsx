@@ -62,7 +62,7 @@ const MobileHero: React.FC = () => (
         transition={{ duration: 0.8 }}
         className="backdrop-blur-md bg-black/30 p-6 sm:p-8 rounded-xl text-center"
       >
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 md:mb-8 leading-tight text-white">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 md:mb-8 leading-tight text-white font-italic">
           Getting Home Service Businesses More Customers.
         </h1>
 
@@ -90,7 +90,7 @@ const MobileHero: React.FC = () => (
             <div className="text-4xl sm:text-6xl md:text-7xl font-bold text-[#8CEAB3]">
               70%
             </div>
-            <p className="text-sm sm:text-xl md:text-2xl mt-2 text-gray-200 font-bold">
+            <p className="text-sm sm:text-xl md:text-2xl mt-2 text-gray-200 italic">
               of businesses get ignored.
             </p>
           </motion.div>

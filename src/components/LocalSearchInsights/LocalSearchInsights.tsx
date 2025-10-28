@@ -46,17 +46,17 @@ const LocalSearchInsights: React.FC = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
             People are searching.
             <br />
-            <span className="text-white">How are you being found?</span>
+            <span className="text-white">How are YOU being found?</span>
             <br />
             <br />
-            Most of your competition looks old, confusing, or doesn't exist
+            Most Businesses look old, confusing, or don't exist
             online -
-            <br />& they are <i>MISSING OUT</i> on customers.
+            <br />& they are <span className="text-red"> <i>missing out</i></span> on customers.
             <br />
             <br />
             <span className="text-[#8CEAB3]">
-              That's where we help you{" "}
-              <b className="underline"> make more money.</b>
+              That's where we make {" "}
+              <b className="underline"> your phone ring.</b>
             </span>
           </h2>
         </motion.div>
