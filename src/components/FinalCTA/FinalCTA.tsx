@@ -28,7 +28,7 @@ const FinalCTA: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-white text-opacity-60 mb-8"
           >
-            Book a free audit of your business and see where you're losing customers.
+            Book a free audit of your business to see where you're losing customers.
           </motion.p>
           <ContactForm2 />
         </div>
