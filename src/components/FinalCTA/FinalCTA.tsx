@@ -17,8 +17,9 @@ const FinalCTA: React.FC = () => {
             className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight"
           >
             It's simple, yet most businesses think it's not worth it -
-            <br />
-            That's why <i> they struggle</i> & <b> we win.</b>
+            <br /> <br />
+            That's why <i> they struggle</i> &{" "}
+           <span className="text-[#8CEAB3]"> <u> <b> we shine.</b> </u></span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

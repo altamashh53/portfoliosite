@@ -7,12 +7,12 @@ const LocalSearchInsights: React.FC = () => {
     {
       icon: <Search className="w-5 h-5 text-[#8CEAB3]" />,
       stat: "97%",
-      description: "of people search online for local businesses",
+      description: "of people search online for local services",
     },
     {
       icon: <MapPin className="w-5 h-5 text-[#8CEAB3]" />,
       stat: "72%",
-      description: "visit a business within 5 miles after local search",
+      description: "contact a business within 5 miles after a search.",
     },
     {
       icon: <TrendingUp className="w-5 h-5 text-[#8CEAB3]" />,
@@ -22,7 +22,7 @@ const LocalSearchInsights: React.FC = () => {
     {
       icon: <Users className="w-5 h-5 text-[#8CEAB3]" />,
       stat: "81%",
-      description: "research your website before making a decision",
+      description: "check out your website before making a decision",
     },
   ];
 
@@ -49,14 +49,18 @@ const LocalSearchInsights: React.FC = () => {
             <span className="text-white">How are YOU being found?</span>
             <br />
             <br />
-            Most Businesses look old, confusing, or don't exist
-            online -
-            <br />& they are <span className="text-red"> <i>missing out</i></span> on customers.
+            Most businesses look old, confusing, or don't exist online -
+            <br />& they are{" "}
+            <span className="text-red">
+              {" "}
+              <i>missing out</i>
+            </span>{" "}
+            on customers.
             <br />
             <br />
             <span className="text-[#8CEAB3]">
-              That's where we make {" "}
-              <b className="underline"> your phone ring.</b>
+              We'll put your business where people are actively searching everyday. <br />
+              That's how we'll make <b className="underline"> your phone ring.</b>
             </span>
           </h2>
         </motion.div>
