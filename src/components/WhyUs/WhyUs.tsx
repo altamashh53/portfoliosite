@@ -5,8 +5,8 @@ import { Check, X } from "lucide-react";
 const comparisonData = [
   {
     aspect: "Cost",
-    you: "From $500 & clear upfront pricing",
-    others: "$2000+ & hidden extras",
+    you: "Fair & Clear upfront pricing - based on value provided",
+    others: "Dirt cheap or Too expensive.",
     othersAgencies: "$$$",
   },
   {
@@ -98,7 +98,7 @@ const WhyUs: React.FC = () => {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-white text-opacity-60">
-                      Fancy Agencies:
+                      Others:
                     </span>
                     <div className="flex items-center gap-2">
                       <X className="w-5 h-5 text-red-400" />

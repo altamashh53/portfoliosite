@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { TrendingUp, MapPin, Zap } from "lucide-react";
 
 const CaseStudy: React.FC = () => {
   return (
@@ -60,65 +59,6 @@ const CaseStudy: React.FC = () => {
                   </span>
                 </li>
               </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="bg-white bg-opacity-5 rounded-lg p-6 backdrop-blur-sm border border-white border-opacity-10"
-            >
-              <h3 className="text-xl font-semibold text-white mb-6">
-                The Results <span className="text-sm">(in 30 days)</span>
-              </h3>
-
-              <div className="grid grid-cols-1 gap-4">
-                <div className="flex items-center gap-3">
-                  <TrendingUp className="w-5 h-5 text-[#8CEAB3]" />
-                  <div>
-                    <span className="text-2xl font-bold text-[#8CEAB3]">6</span>
-                    <span className="text-white text-opacity-80 ml-2">
-                      New Customers
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-[#8CEAB3]" />
-                  <div>
-                    <span className="text-2xl font-bold text-[#8CEAB3]">
-                      50%
-                    </span>
-                    <span className="text-white text-opacity-80 ml-2">
-                      increase in online inquires.
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <Zap className="w-5 h-5 text-[#8CEAB3]" />
-                  <span className="text-white text-opacity-80">
-                    Constant stream of new customers.
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6 }}
-            >
-              <a
-                href="https://ennobletechnology.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-[#8CEAB3] hover:bg-[#7BD9A3] text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
-              >
-                Check Them Out
-              </a>
             </motion.div>
           </div>
 
@@ -194,62 +134,6 @@ const CaseStudy: React.FC = () => {
             </ul>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="bg-white bg-opacity-5 rounded-lg p-6 backdrop-blur-sm border border-white border-opacity-10"
-          >
-            <h3 className="text-xl font-semibold text-white mb-6">
-              The Results <span className="text-sm">(in 30 days)</span>
-            </h3>
-
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <TrendingUp className="w-5 h-5 text-[#8CEAB3]" />
-                <div>
-                  <span className="text-2xl font-bold text-[#8CEAB3]">6</span>
-                  <span className="text-white text-opacity-80 ml-2">
-                    New Customers
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-[#8CEAB3]" />
-                <div>
-                  <span className="text-2xl font-bold text-[#8CEAB3]">50%</span>
-                  <span className="text-white text-opacity-80 ml-2">
-                    increase in online inquires.
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <Zap className="w-5 h-5 text-[#8CEAB3]" />
-                <span className="text-white text-opacity-80">
-                  Constant stream of new customers.
-                </span>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
-            className="text-center"
-          >
-            <a
-              href="https://ennobletechnology.net"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto block bg-[#8CEAB3] hover:bg-[#7BD9A3] text-black font-semibold text-xl px-6 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
-            >
-              Check Them Out
-            </a>
-          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

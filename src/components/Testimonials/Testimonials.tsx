@@ -65,7 +65,7 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-20 bg-[#0A0A0A] overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-8">
         <h2 className="text-4xl font-bold text-white mb-12">
-          See How We've Helped Others
+         How We Get Results - 
         </h2>
 
         <div className="relative">
