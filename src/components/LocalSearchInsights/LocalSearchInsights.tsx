@@ -49,7 +49,7 @@ const LocalSearchInsights: React.FC = () => {
             <span className="text-white">How are YOU being found?</span>
             <br />
             <br />
-            Most businesses are{" "}
+            Most home-service businesses are{" "}
             <span className="text-red">
               {" "}
               <i>missing out</i>
@@ -58,7 +58,7 @@ const LocalSearchInsights: React.FC = () => {
             <br />
             <br />
             <span className="text-[#8CEAB3]">
-              We'll put your business where people are actively searching everyday. <br />
+              We'll put your business where people are actively searching EVERY.SINGLE.DAY. <br />
               <br />
               That's how we'll make <b className="underline"> your phone ring.</b>
             </span>
